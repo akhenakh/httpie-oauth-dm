@@ -19,8 +19,8 @@ class OAuth2DMPlugin(AuthPlugin):
     description = 'first export API_KEY, API_SECRET & AUTHORIZATION_URL'
 
     def get_auth(self, username, password):
-        if not os.environ.get('API_KEY') or not os.environ.get('API_SECRET') or not os.environ.get('AUTHORIZATION_URL'):
-            print('Set your API_KEY, API_SECRET & AUTHORIZATION_URL in your environnement')
+        if not os.environ.get('API_KEY') or not os.environ.get('API_SECRET'):
+            print('Set your API_KEY &API_SECRET in your environnement')
             sys.exit(2)
 
         payload = {
