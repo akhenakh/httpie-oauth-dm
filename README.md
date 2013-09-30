@@ -1,7 +1,7 @@
 httpie-oauth-dm
 ===============
 
-Dailymotion OAuth2 plugins for httpie
+Dailymotion OAuth2 plugins for [httpie](https://github.com/jkbr/httpie) 
 
 .. code-block:: bash
 
@@ -15,7 +15,7 @@ Usage
     $ export API_SECRET=myapisecret
     $ http --auth-type=oauth2DM --auth=client-key:client-secret GET https://api.dailymotion.com/me 
 
-You can also use `HTTPie sessions <https://github.com/jkbr/httpie#sessions>`_:
+You can also use HTTPie sessions.
 
 .. code-block:: bash
 
@@ -25,3 +25,7 @@ You can also use `HTTPie sessions <https://github.com/jkbr/httpie#sessions>`_:
     # Re-use auth
     $ http --session=dm GET https://api.dailymotion.com/me
 
+
+TODO
+----
+httpie oauth plugins API does not permit yet to deal with token refresh
